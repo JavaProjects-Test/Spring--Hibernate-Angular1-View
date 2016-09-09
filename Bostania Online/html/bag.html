@@ -1,0 +1,19 @@
+<div>
+	<h2>{{tableHeader}}</h2>
+	<table class="table table-hover">
+		<thread>
+			<tr>
+				<th>Bag Type</th>
+				<th>Bag Company</th>
+				<th>Bag Price</th>
+				<th>Bag Image</th>
+			</tr>
+		</thread>
+		<tr ng-repeat="bag in bagdata">
+		<td>{{bag.bagType}}</td>
+		<td>{{bag.bagCompany}}</td>
+		<td>{{bag.bagPrice | currency}}</td>
+		<td><a href="#/default"><img src="./img/bostania/{{bag.bagType}}.png" class="img-circle" width="150px" height="10px" title="Click here for more details"></img></a></td>
+		</tr>
+	</table>
+</div>

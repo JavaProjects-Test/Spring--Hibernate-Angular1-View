@@ -1,0 +1,17 @@
+<div class="container">
+	<form class="form-signin" name="login" ng-submit="submit()">
+		<h2 class="form-signin-heading">Enter your Credentials</h2>
+		<div class="form-group" style="padding-top:17px;">
+			<br><input type="email" class="form-control"
+			placeholder="Email" ng-model="emailId" />
+			<br><input type="password" class="form-control" placeholder="Password"
+			ng-model="password" /><br>
+			<button class="btn btn-large btn-primary" type="submit">Login</button>
+		<a href="#/forgotpassword">Forgot Password?</a>
+		</div>
+		<div id="errormessage">
+			{{errorMessage1}}<br>
+			{{errorMessage2}}
+		</div>
+	</form>
+</div>

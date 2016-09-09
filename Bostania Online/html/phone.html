@@ -1,0 +1,20 @@
+<div>
+	<h2>{{tableHeader}}</h2>
+	<table class="table table-hover">
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th>Company</th>
+				<th>Price</th>
+				<th>Image</th>
+			</tr>
+		</thead>
+		<tr ng-repeat="phonedetail in phonedata">
+			<td>{{phonedetail.phoneName}}</td>
+			<td>{{phonedetail.phoneCompany}}</td>
+			<td>{{phonedetail.phonePrice | currency}}</td>
+			<td><a href="#/default"><img src="./img/bostania/{{phonedetail.phoneName}}.png" class="img-circle" width="150px" height="10px" title="Click here for more details"></img></a></td>
+		</tr>        
+	</table>
+	<a href="#/home">Home</a>
+</div>
